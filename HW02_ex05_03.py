@@ -20,14 +20,22 @@
 ################################################################################
 # Write your functions below:
 # Body
-
-
-
-
-
-
-
-
+def check_fermat(a,b,c,n):
+    if (n>2):
+        if ((a**n) + (b**n) == (c**n)):
+            print "Holy smokes, Fermat was wrong!"
+        else:
+            print "No, that doesn't work."
+    else:
+        print "No, Fermat's theoram doesn't work."
+        
+def check_fermat_ints():
+    a = int(input("enter the value of first variable a : "))
+    b = int(input("enter the value of second variable b : "))
+    c = int(input("enter the value of third variable c : "))
+    n = int(input("enter the value of n : "))
+    check_fermat(a,b,c,n)
+        
 
 # Write your functions above:
 ################################################################################
@@ -39,7 +47,10 @@ def main():
     check_fermat_ints()
     check_fermat()
     """
+   
+    
     print("Hello World!")
+    check_fermat_ints()
 
 
 

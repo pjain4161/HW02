@@ -11,23 +11,30 @@
 # Example:
 # >>> right_justify('allen')
 #                                                                  allen
+#                                                                 PYTHON
+#                                                                PYTHON
 ################################################################################
 # Write your function below:
 # Body
 
-
-
-
-
-
-
+def right_justify(name):
+    length = len(name)
+    init = ""
+    for i in range(0,70-length):
+        init = init + " " 
+        
+    print init + name
+        
+    print(" "*(70-len(name))+name)
+    
+    
 # Write your function above:
 ################################################################################
 def main():
     """Call your functions within this function."""
     print("Hello World!")
-    right_justify("Python")
-    right_justify("YOUR_NAME")
+    right_justify("PYTHON")
+    right_justify("POOJA")
 
 if __name__ == "__main__":
     main()

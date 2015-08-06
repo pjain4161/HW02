@@ -24,7 +24,21 @@
 # Body
 
 
-
+def is_triangle(a,b,c):
+    if(((a+b)<c) or ((a+c)<b) or ((b+c)<a)):
+        print " No, it cant form a triangle"
+    elif(((a+b)== c) or ((a+c)== b) or ((b+c)== a)):
+        print("its a degenerate triangle")
+    else:1
+    
+        print("Yes!, it can form a triangle")
+        
+def check_stick_lengths():
+    a = int(input("enter the value of first side : "))
+    b = int(input("enter the value of second side : "))
+    c = int(input("enter the value of third side : "))
+    
+    is_triangle(a, b, c)
 
 
 
@@ -45,6 +59,11 @@ def main():
     check_stick_lengths()
     """
     print("Hello World!")
+    is_triangle(1,2,3)
+    is_triangle(1,2,4)
+    is_triangle(1,5,3)
+    is_triangle(6,2,3)
+    check_stick_lengths()
 
 
 
